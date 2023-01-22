@@ -1,7 +1,7 @@
 {
-  "port": 5000,
+  "port": 80,
   "jwtSecret": "vitalii youtube mern", // секретная строчка
   //"mongoUri": "mongodb+srv://vitalii:nidooth2033@cluster0.6fwx9.mongodb.net/app?retryWrites=true&w=majority"
   "mongoUri": "mongodb+srv://vitalii:9052465912@cluster0.6fwx9.mongodb.net/?retryWrites=true&w=majority",
-  "baseUrl": "http://localhost:5000"
+  "baseUrl": "http://vitaliy-link.ru"
 }
