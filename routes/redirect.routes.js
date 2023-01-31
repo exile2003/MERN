@@ -8,7 +8,7 @@ router.get('/:code', async (req, res) => {
        const link = await Link.findOne({ code: req.params.code })
 
         if (link) {
-            link.cliks++
+            link.clicks++
             await link.save()
             return res.redirect(link.from)
         }

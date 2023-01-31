@@ -4,12 +4,17 @@ import {useHttp} from '../hooks/http.hook'
 import {AuthContext} from '../context/AuthContext'
 import {LinkCard} from '../components/LinkCard'
 import {Loader} from '../components/Loader'
+import {useMessage} from '../hooks/message.hook';
+
 
 export const DetailPage = () => {
     const {token} = useContext(AuthContext)
     const {request, loading} = useHttp()
     const [link, setLink] = useState(null)
     const linkId = useParams().id
+    const auth = useContext(AuthContext)
+    const message = useMessage()
+
 
     const getLink = useCallback(async() => {
         try {
@@ -17,7 +22,11 @@ export const DetailPage = () => {
                 Authorization: `Bearer ${token}`
             })
             setLink(fetched)
-        } catch(e) {}
+        } catch(e) {
+            message('Время действия аутентификации закончилось.')
+            message('Для продолжения работы введите логин и пароль заново.')
+            auth.logout();
+        }
     }, [token, linkId, request])
 
     useEffect(() => {
