@@ -1,0 +1,336 @@
+PS C:\Documents\Javascript-Folder\MERN\client\src> git init
+Initialized empty Git repository in C:/Documents/Javascript-Folder/MERN/client/src/.git/
+PS C:\Documents\Javascript-Folder\MERN\client\src> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        App.js
+        components/
+        context/
+        index.css
+        index.js
+        pages/
+        reportWebVitals.js
+        routes.js
+        setupTests.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Documents\Javascript-Folder\MERN\client\src> git commit -am "Correct css file"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        App.js
+        components/
+        context/
+        index.css
+        index.js
+        pages/
+        reportWebVitals.js
+        routes.js
+        setupTests.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git commit -am "Correct css file"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        App.js
+        components/
+        context/
+        index.css
+        index.js
+        pages/
+        reportWebVitals.js
+        routes.js
+        setupTests.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git commit -am "Correct css file"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        App.js
+        components/
+        context/
+        index.js
+        pages/
+        reportWebVitals.js
+        routes.js
+        setupTests.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Documents\Javascript-Folder\MERN\client\src> git add *
+PS C:\Documents\Javascript-Folder\MERN\client\src> git commit -am "Correct css file"
+[master (root-commit) dcf1bbc] Correct css file
+ 18 files changed, 566 insertions(+)
+ create mode 100644 App.js
+ create mode 100644 components/LinkCard.js
+ create mode 100644 components/LinksList.js
+ create mode 100644 components/Loader.js
+ create mode 100644 components/Navbar.js
+ create mode 100644 context/AuthContext.js
+ create mode 100644 hooks/auth.hook.js
+ create mode 100644 hooks/http.hook.js
+ create mode 100644 hooks/message.hook.js
+ create mode 100644 index.js
+ create mode 100644 pages/AuthPage.js
+ create mode 100644 pages/CreatePage.js
+ create mode 100644 pages/DetailPage.js
+ create mode 100644 pages/LinksPage.js
+ create mode 100644 reportWebVitals.js
+ create mode 100644 routes.js
+ create mode 100644 setupTests.js
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push
+Either specify the URL from the command-line or configure a remote repository using
+    git remote add <name> <url>
+
+    git push <name>
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git branches
+2024-01-23 14:51:44 +0200 dcf1bbc master
+PS C:\Documents\Javascript-Folder\MERN\client\src> git branch  
+* master
+PS C:\Documents\Javascript-Folder\MERN\client\src> git remote add someurl https://github.com/exile2003/MERN.git
+To https://github.com/exile2003/MERN.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/exile2003/MERN.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git pull
+There is no tracking information for the current branch.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=someurl/<branch> master
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git pull https://github.com/exile2003/MERN.git master
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (36/36), done.
+remote: Total 289 (delta 34), reused 2 (delta 0), pack-reused 253
+Receiving objects: 100% (289/289), 204.11 KiB | 1.05 MiB/s, done.
+Resolving deltas: 100% (175/175), done.
+From https://github.com/exile2003/MERN
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push -u someurl master
+To https://github.com/exile2003/MERN.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/exile2003/MERN.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git pull
+There is no tracking information for the current branch.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=someurl/<branch> master
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git branch --set-upstream-to=someurl/master master  
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git branch --set-upstream-to=someurl master
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push -u If you are planning on basing your work on an upstream
+error: src refspec you does not match any
+error: src refspec are does not match any
+error: src refspec on does not match any
+error: src refspec basing does not match any
+error: src refspec your does not match any
+error: src refspec work does not match any
+error: src refspec on does not match any
+error: src refspec an does not match any
+error: src refspec upstream does not match any
+error: failed to push some refs to 'If'
+hint: : The term 'hint:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the   
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ hint: branch that already exists at the remote, you may need to
++ ~~~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push -u https://github.com/exile2003/MERN.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/exile2003/MERN.git master
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push -u https://github.com/exile2003/MERN.git master
+To https://github.com/exile2003/MERN.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/exile2003/MERN.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git pull
+There is no tracking information for the current branch.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+
+    git branch --set-upstream-to=someurl/<branch> master
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git pull someurl master
+From https://github.com/exile2003/MERN
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> someurl/master
+fatal: refusing to merge unrelated histories
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push
+Either specify the URL from the command-line or configure a remote repository using
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git branch
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push someurl master
+To https://github.com/exile2003/MERN.git
+ ! [rejected]        master -> master (non-fast-forward)
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git pull someurl
+You asked to pull from the remote 'someurl', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git pull someurl master
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+PS C:\Documents\Javascript-Folder\MERN\client\src> git pull master someurl
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push someurl master
+To https://github.com/exile2003/MERN.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/exile2003/MERN.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push -ff someurl master
+Counting objects: 100% (24/24), done.
+Delta compression using up to 8 threads
+Writing objects: 100% (24/24), 8.46 KiB | 2.12 MiB/s, done.
+Total 24 (delta 1), reused 15 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/exile2003/MERN.git
+ + a58a361...dcf1bbc master -> master (forced update)
+PS C:\Documents\Javascript-Folder\MERN\client\src> git status
+On branch master
+PS C:\Documents\Javascript-Folder\MERN\client\src> git status
+On branch master
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Documents\Javascript-Folder\MERN\client\src> git commit -am "Correct css file"
+[master 53d8c53] Correct css file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push someurl master
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/exile2003/MERN.git
+   dcf1bbc..53d8c53  master -> master
+PS C:\Documents\Javascript-Folder\MERN\client\src> git commit -am "Correct css file"
+[master c9fe988] Correct css file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push -u someurl master
+Enumerating objects: 5, done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (3/3), 302 bytes | 302.00 KiB/s, done.
+Total 3 (delta 2), reused 2 (delta 2), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/exile2003/MERN.git
+   53d8c53..c9fe988  master -> master
+Branch 'master' set up to track remote branch 'master' from 'someurl'.
+PS C:\Documents\Javascript-Folder\MERN\client\src> git push
+Everything up-to-date
+PS C:\Documents\Javascript-Folder\MERN\client\src> 
